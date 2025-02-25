@@ -20,7 +20,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	res := Response{
 		Status:  "success",
 		Time:    time.Now().Format(time.RFC3339),
-		Message: "Hello, container inside kubernetes",
+		Message: "CI/CD pipeline with Jenkins, Docker, Helm, and Kubernetes,",
 	}
 
 	json.NewEncoder(w).Encode(res)
