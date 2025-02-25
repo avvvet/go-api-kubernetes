@@ -18,7 +18,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
 	res := Response{
-		Status:  "success: api running",
+		Status:  "success: api running, awsome",
 		Time:    time.Now().Format(time.RFC3339),
 		Message: "CI/CD pipeline with Jenkins, Docker, Helm, and Kubernetes,",
 	}
