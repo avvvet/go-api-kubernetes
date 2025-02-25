@@ -1,0 +1,10 @@
+replicaCount: 4
+
+image:
+  repository: awet/go-api
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 8181
