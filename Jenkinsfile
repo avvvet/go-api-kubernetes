@@ -33,7 +33,7 @@ pipeline {
         stage('Deploy to Kubernetes') {
             steps {
                 script {
-                    sh "helm upgrade --install go-api ./helm/go-api --set image.repository=awet/go-api --set image.tag=latest"
+                    sh "helm upgrade --install go-api ./helm --set image.repository=awet/go-api --set image.tag=latest"
                 }
             }
         }
