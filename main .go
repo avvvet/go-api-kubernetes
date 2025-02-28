@@ -20,7 +20,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	res := Response{
 		Status:  "success: api running, awesome",
 		Time:    time.Now().Format(time.RFC3339),
-		Message: "automated CI/CD pipeline with Jenkins, Docker, Helm, and Kubernetes,",
+		Message: "automated CI/CD pipeline with Jenkins, Docker, Helm, and Kubernetes (AWS EKS),",
 	}
 
 	json.NewEncoder(w).Encode(res)
